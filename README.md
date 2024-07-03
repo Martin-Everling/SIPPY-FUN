@@ -20,8 +20,7 @@ are available, and in the MIMO case.
 
 ### Installation and package content 
 The code has been implemented in Python 2.7, compatible with Python 3.7, (download it [here](https://www.python.org/downloads/)) and requires the following packages:
-NumPy, SciPy, control (version >= 0.8.2), math, Slycot, Future (See installation instruction [here](http://python-future.org/quickstart.html#installation)), CasADi (see [here](https://web.casadi.org/get/)).
-The Slycot package is available [here](https://pypi.python.org/pypi/slycot/0.2.0) or alternatively the binaries can be found [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/).
+NumPy, SciPy, control (version >= 0.8.2), math, Future (See installation instruction [here](http://python-future.org/quickstart.html#installation)), CasADi (see [here](https://web.casadi.org/get/)).
 
 In order to make the installation easier, the user can simply use the quick command 
 `python setup.py install`

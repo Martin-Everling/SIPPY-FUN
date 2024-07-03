@@ -155,7 +155,10 @@ def K_calc(A, C, Q, R, S):
         K = np.dot(K, np.linalg.inv(np.dot(np.dot(C, P), C.T) + R))
         Calculated = True
     except:
-        K = []
+        # Bypass solving Riccati equation to avoid using slycot
+        P = np.empty([n_A, n_A])
+        K = np.dot(np.dot(A, P), C.T) + S
+        K = np.dot(K, np.linalg.inv(np.dot(np.dot(C, P), C.T) + R))
         print("Kalman filter cannot be calculated")
         Calculated = False
     return K, Calculated
